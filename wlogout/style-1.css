@@ -1,0 +1,109 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 1em;
+  transition-property: background-color, background-size;
+  transition-duration: 1s;
+  background-image: none;
+}
+
+@import "$HOME/.config/waybar/theme.css";
+
+window {
+  background-color: transparent;
+}
+
+button {
+  color: @main-fg;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  border: 0.8em solid transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+button:focus {
+  color: @active-fg;
+  background-color: @active-bg;
+  background-size: 40%;
+  outline: 2px solid @main-br;
+  outline-radius: 0;
+}
+
+button:hover {
+  background-color: @hover-bg;
+  background-size: 40%;
+}
+
+button:hover#lock {
+  background-size: 50%;
+}
+
+button:hover#logout {
+  background-size: 40%;
+}
+
+button:focus#lock {
+  background-image: url("$HOME/.config/wlogout/icons/lock-black.png");
+  background-size: 50%;
+}
+
+button:focus#logout {
+  background-image: url("$HOME/.config/wlogout/icons/logout-black.png");
+  background-size: 40%;
+}
+
+button:focus#suspend {
+  background-image: url("$HOME/.config/wlogout/icons/suspend-black.png");
+}
+
+button:focus#shutdown {
+  background-image: url("$HOME/.config/wlogout/icons/shutdown-black.png");
+}
+
+button:focus#hibernate {
+  background-image: url("$HOME/.config/wlogout/icons/hibernate-black.png");
+}
+
+button:focus#reboot {
+  background-image: url("$HOME/.config/wlogout/icons/reboot-black.png");
+}
+
+#lock {
+  background-image: url("$HOME/.config/wlogout/icons/lock-white.png");
+  background-size: 30%;
+  border-radius: 0;
+  margin: ${margin}px 0 ${margin}px ${margin}px;
+}
+
+#logout {
+  background-image: url("$HOME/.config/wlogout/icons/logout-white.png");
+  background-size: 25%;
+  border-radius: 0;
+  margin: ${margin}px 0 ${margin}px 0;
+}
+
+#suspend {
+  background-image: url("$HOME/.config/wlogout/icons/suspend-white.png");
+  border-radius: 0;
+  margin: ${margin}px 0 ${margin}px 0;
+}
+
+#shutdown {
+  background-image: url("$HOME/.config/wlogout/icons/shutdown-white.png");
+  border-radius: 0;
+  margin: ${margin}px 0 ${margin}px 0;
+}
+
+#hibernate {
+  background-image: url("$HOME/.config/wlogout/icons/hibernate-white.png");
+  border-radius: 0;
+  margin: ${margin}px 0 ${margin}px 0;
+}
+
+#reboot {
+  background-image: url("$HOME/.config/wlogout/icons/reboot-white.png");
+  border-radius: 0;
+  margin: ${margin}px ${margin}px ${margin}px 0;
+}
