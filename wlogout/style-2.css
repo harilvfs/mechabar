@@ -66,24 +66,24 @@ button:focus#reboot {
   background-image: url("$HOME/.config/wlogout/icons/lock-white.png");
   background-size: 25%;
   border-radius: 0;
-  margin : ${y_margin}px 0px 0px ${x_margin}px;
+  margin : ${y_margin}px 0 0 ${x_margin}px;
 }
 
 #logout {
   background-image: url("$HOME/.config/wlogout/icons/logout-white.png");
   background-size: 25%;
   border-radius: 0;
-  margin : 0px 0px ${y_margin}px ${x_margin}px;
+  margin : 0 0 ${y_margin}px ${x_margin}px;
 }
 
 #shutdown {
   background-image: url("$HOME/.config/wlogout/icons/shutdown-white.png");
   border-radius: 0;
-  margin : ${y_margin}px ${x_margin}px 0px 0px;
+  margin : ${y_margin}px ${x_margin}px 0 0;
 }
 
 #reboot {
   background-image: url("$HOME/.config/wlogout/icons/reboot-white.png");
   border-radius: 0;
-  margin : 0px ${x_margin}px ${y_margin}px 0px;
+  margin : 0 ${x_margin}px ${y_margin}px 0;
 }
