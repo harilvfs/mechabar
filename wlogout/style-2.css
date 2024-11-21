@@ -49,8 +49,14 @@ button:hover#lock {
 
 #logout {
   background-image: url("$HOME/.config/wlogout/icons/logout.png");
+  background-size: 40%;
   border-radius: 0;
   margin : 0 0 ${y_margin}px ${x_margin}px;
+}
+button:focus#logout,
+button:hover#logout {
+  background-image: url("$HOME/.config/wlogout/icons/logout.png");
+  background-size: 60%;
 }
 
 #shutdown {
