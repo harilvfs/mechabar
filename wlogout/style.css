@@ -28,7 +28,7 @@ button:focus {
   background-color: @active-bg;
   background-size: 60%;
   outline: 2px solid @main-br;
-  outline-radius: 0;
+  -gtk-outline-radius: 0;
 }
 button:hover {
   color: transparent;
@@ -40,7 +40,7 @@ button:hover {
   background-image: url("$HOME/.config/wlogout/icons/lock.png");
   background-size: 45%;
   border-radius: 0;
-  margin: ${y_margin} 0 0 ${x_margin};
+  margin: ${y_margin}px 0 0 ${x_margin}px;
 }
 button:focus#lock,
 button:hover#lock {
@@ -50,39 +50,37 @@ button:hover#lock {
 
 #logout {
   background-image: url("$HOME/.config/wlogout/icons/logout.png");
-  background-size: 45%;
+  background-size: 42%;
   border-radius: 0;
-  margin: 0 0 ${y_margin} ${x_margin};
+  margin: ${y_margin}px ${x_margin}px 0 0;
 }
 button:focus#logout,
 button:hover#logout {
   background-image: url("$HOME/.config/wlogout/icons/logout.png");
-  background-size: 65%;
-}
-
-#suspend {
-  background-image: url("$HOME/.config/wlogout/icons/suspend.png");
-  background-size: 38%;
-  border-radius: 0;
-  margin: ${y_margin} 0 0 0;
-}
-button:focus#suspend,
-button:hover#suspend {
-  background-image: url("$HOME/.config/wlogout/icons/suspend.png");
-  background-size: 58%;
+  background-size: 62%;
 }
 
 #shutdown {
   background-image: url("$HOME/.config/wlogout/icons/shutdown.png");
   border-radius: 0;
-  margin: ${y_margin} ${x_margin} 0 0;
+  margin: 0 0 0 ${x_margin}px;
+}
+
+#reboot {
+  background-image: url("$HOME/.config/wlogout/icons/reboot.png");
+  border-radius: 0;
+  margin: 0 ${x_margin}px 0 0;
+}
+button:focus#reboot,
+button:hover#reboot {
+  background-image: url("$HOME/.config/wlogout/icons/reboot.png");
 }
 
 #hibernate {
   background-image: url("$HOME/.config/wlogout/icons/hibernate.png");
   background-size: 42%;
   border-radius: 0;
-  margin: 0 0 ${y_margin} 0;
+  margin: 0 0 ${y_margin}px ${x_margin}px;
 }
 button:focus#hibernate,
 button:hover#hibernate {
@@ -90,12 +88,14 @@ button:hover#hibernate {
   background-size: 62%;
 }
 
-#reboot {
-  background-image: url("$HOME/.config/wlogout/icons/reboot.png");
+#suspend {
+  background-image: url("$HOME/.config/wlogout/icons/suspend.png");
+  background-size: 38%;
   border-radius: 0;
-  margin: 0 ${x_margin} ${y_margin} 0;
+  margin: 0 ${x_margin}px ${y_margin}px 0;
 }
-button:focus#reboot,
-button:hover#reboot {
-  background-image: url("$HOME/.config/wlogout/icons/reboot.png");
+button:focus#suspend,
+button:hover#suspend {
+  background-image: url("$HOME/.config/wlogout/icons/suspend.png");
+  background-size: 58%;
 }
