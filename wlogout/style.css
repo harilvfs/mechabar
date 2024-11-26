@@ -37,14 +37,14 @@ button:hover {
 
 #lock {
   background-image: url("$HOME/.config/wlogout/icons/lock.png");
-  background-size: 42%;
+  background-size: 44%;
   border-radius: 0;
   margin: ${y_margin}px 0 0 ${x_margin}px;
 }
 button:focus#lock,
 button:hover#lock {
   background-image: url("$HOME/.config/wlogout/icons/lock.png");
-  background-size: 62%;
+  background-size: 64%;
 }
 
 #logout {
@@ -77,14 +77,14 @@ button:hover#reboot {
 
 #hibernate {
   background-image: url("$HOME/.config/wlogout/icons/hibernate.png");
-  background-size: 45%;
+  background-size: 43%;
   border-radius: 0;
   margin: 0 0 ${y_margin}px ${x_margin}px;
 }
 button:focus#hibernate,
 button:hover#hibernate {
   background-image: url("$HOME/.config/wlogout/icons/hibernate.png");
-  background-size: 65%;
+  background-size: 63%;
 }
 
 #suspend {
